@@ -19,8 +19,7 @@ pushd $TMP_DIR
     make
     sudo make check
     cc -shared src/bcm2835.o -o libbcm2835.so
-    cp libbcm2835.so "$PWD_DIR"/lib/libbcm2835.so
-  # sudo make install
+    cp libbcm2835.so "$PWD_DIR"/lib/rpio/bcm2835/libbcm2835.so
   popd
 popd
 

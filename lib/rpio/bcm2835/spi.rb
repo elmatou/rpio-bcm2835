@@ -1,6 +1,8 @@
 module Rpio
   module Bcm2835
     module SPI
+      include Rpio::Bcm2835::FFI
+      
       SPI_MODE0 = 0
       SPI_MODE1 = 1
       SPI_MODE2 = 2

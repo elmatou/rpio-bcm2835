@@ -1,6 +1,8 @@
 module Rpio
   module Bcm2835
     module Gpio
+      include Rpio::Bcm2835::FFI
+
       GPIO_FSEL_INPT = 0b000
       GPIO_FSEL_OUTP = 0b001
 

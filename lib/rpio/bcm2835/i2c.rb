@@ -1,6 +1,7 @@
 module Rpio
   module Bcm2835
     module I2C
+      include Rpio::Bcm2835::FFI
 
       I2C_REASON_OK         = 0  #Success
       I2C_REASON_ERROR_NACK = 1  #Received a NACK

@@ -1,6 +1,7 @@
 module Rpio
   module Bcm2835
     module PWM
+      include Rpio::Bcm2835::FFI
 
       GPIO_FSEL_ALT0 = 0b100
       GPIO_FSEL_ALT1 = 0b101

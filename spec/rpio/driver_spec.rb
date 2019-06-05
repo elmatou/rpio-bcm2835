@@ -1,10 +1,8 @@
 RSpec.describe Rpio::Bcm2835::Driver do
 
-
   it 'inherits from Rpio::Driver' do
     expect(Rpio::Bcm2835::Driver).to be < Rpio::Driver
   end
-
 
   subject { Rpio::Bcm2835::Driver.new(true) }
 
