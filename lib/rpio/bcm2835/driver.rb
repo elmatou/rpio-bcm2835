@@ -1,7 +1,7 @@
 module Rpio
   module Bcm2835
     class Driver < Rpio::Driver
-      include Rpio::Bcm2835::FFI
+      extend Rpio::Bcm2835::FFI
 
       def initialize(dev = false)
         bcm2835_set_debug(1) if dev
